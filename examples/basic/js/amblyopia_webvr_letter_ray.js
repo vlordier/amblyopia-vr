@@ -13,8 +13,12 @@ if (!window.requestAnimationFrame) {
 window.Tetris = window.Tetris || {};
 Tetris.sounds = {};
 //BKL used to control left eye / right eye layers. (0 = both, 1=left (default), 2=right)
-var VR_layers = 1;
-var N_VR_layers = 2;
+//var VR_layers = 1;
+//var N_VR_layers = 2;
+var VR_layers = 2;
+var N_VR_layers = 1;
+
+
 //BKL global for gamepad
 var gamepadconnected = 0;
 var flipflop3 = 0 ; // debounce control for gamepad 
@@ -1460,7 +1464,7 @@ Tetris.init = function () {
     Tetris.sounds["gameover"] = document.getElementById("audio_gameover");  
     Tetris.sounds["score"] = document.getElementById("audio_score");  
 
-    Tetris.sounds["theme"].play();
+//    Tetris.sounds["theme"].play();
     // set the scene size
 	
 	// BKL create inital random letter
