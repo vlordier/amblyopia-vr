@@ -32,16 +32,20 @@ document.addEventListener('touchmove', function(e) {
 </script>
 
 <!-- three.js library -->
-<script src="node_modules/three/build/three.js"></script>
+<!-- VLO <script src="node_modules/three/build/three.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
 
 <!-- VRControls.js applies the WebVR transformations to a three.js camera object. -->
-<script src="node_modules/three/examples/js/controls/VRControls.js"></script>
+<!-- VLO <script src="node_modules/three/examples/js/controls/VRControls.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/three-vrcontrols@1.0.0/VRControls.js"></script>   
 
 <!-- VREffect.js handles stereo camera setup and rendering.  -->
-<script src="node_modules/three/examples/js/effects/VREffect.js"></script>
+<!-- VLO <script src="node_modules/three/examples/js/effects/VREffect.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/three-vreffect@1.0.0/VREffect.js"></script>
 
 <!-- A polyfill for the WebVR API.  -->
-<script src="../../build/webvr-polyfill.js"></script>
+<!-- VLO <script src="../../build/webvr-polyfill.js"></script>  -->
+<script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script>
 
 
 <script>

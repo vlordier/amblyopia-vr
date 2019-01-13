@@ -8,84 +8,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<!-- <title>Three.js Tetris</title> -->
-        <style>
-            body {margin: 0; padding: 0; overflow: hidden}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="style_letter_ray.css">
 
-            #menu {
-                position: absolute;
-                width: 400px;
-                height: 325px;
-
-                top: 20%; left: 40%;
-                margin: -125px 0 0 -100px;
-
-                text-align: center;
-
-                border: 3px solid #fff;
-                border-radius: 15px;
-
-                background-color: #E36B23;
-                box-shadow: 2px 10px 5px #888;
-            }
-
-            #menu p {font-weight: bold; color: #fff;}
-            #menu p a {color: #fff;}
-
-            #menu button {
-                width: 80px;
-                height: 25px;
-
-                background-color: #C44032;
-
-                border: 3px solid #fff;
-                border-radius: 5px;
-
-                font-size: 14px;
-                font-weight: bold;
-                color: #fff;
-            }
-
-			#points {
-                position: absolute;
-                width: 100px;
-                height:20px;
-
-                padding: 12px;
-
-                top: 4px;
-                right: 8px;
-
-                border: 1px solid #000;
-                border-radius: 1px;
-
-                background-color: #EA2917;
-                box-shadow: 1px 1px 1px #000;
-
-                font-size: 28px;
-                font-weight: bold;
-                color: #000;
-
-                text-align: right;
-
-                display: none;
-            }
-			<!-- BKL  -->
-			canvas {
-			  position: absolute;
-			  top: 0;
-			}
-
-			#buttons {
-			  position: fixed;
-			  top: 0;
-			  right: 0;
-			  z-index: 1;
-			  background: black;
-			}
-			
-        </style>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	</head>
     <body>
         <audio id="audio_theme" src="music/tetris.mp3" preload="auto"></audio>
@@ -131,10 +56,12 @@
 		</div>
 
 		<!-- BKL Adding WebVR poly library -->
-		<script src="node_modules/three/build/three.js"></script>
+		<!-- VLO <script src="node_modules/three/build/three.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
+
 		<!-- VRControls.js applies the WebVR transformations to a three.js camera object. -->
-		<script src="node_modules/three/examples/js/controls/VRControls.js"></script>
-		
+		<!-- VLO <script src="node_modules/three/examples/js/controls/VRControls.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/three-vrcontrols@1.0.0/VRControls.js"></script>		
 		<!-- Handles controller inputs.  -->
 	<!-- 	<script src="node_modules/three/examples/basic/js/VRController.js"></script> -->
 		
@@ -142,17 +69,22 @@
 	<!-- 	<script src="node_modules/three/examples/basic/js/datguivr.js"></script> -->
 
 		<!-- VREffect.js handles stereo camera setup and rendering.  -->
-		<script src="node_modules/three/examples/js/effects/VREffect.js"></script>
+		<!-- VLO <script src="node_modules/three/examples/js/effects/VREffect.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/three-vreffect@1.0.0/VREffect.js"></script>
 
 		<!-- A polyfill for the WebVR API.  -->
-		<script src="../../build/webvr-polyfill.js"></script>	
+		<!-- VLO <script src="../../build/webvr-polyfill.js"></script>	-->
+        <script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script>
+
 		
 		<!-- three.js library -->		
-        <script type="text/javascript" src="js/Stats.js"></script>
+        <!-- VLO <script type="text/javascript" src="js/Stats.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.js"></script>
         <script type="text/javascript" src="js/amblyopia_webvr_letter_ray.js"></script>
         <script type="text/javascript" src="js/tetris.board.js"></script>
         <script type="text/javascript" src="js/amblyopia_webvr_test.block.js"></script>
-        <script src="js/cufon-yui.js" type="text/javascript"></script>
+        <!-- VLO <script src="js/cufon-yui.js" type="text/javascript"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cufon/1.09i/cufon-yui.js"></script>
         <script src="js/Blox_400.font.js" type="text/javascript"></script>
 
 
