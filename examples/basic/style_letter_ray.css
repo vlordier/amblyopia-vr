@@ -1,0 +1,74 @@
+            body {margin: 0; padding: 0; overflow: hidden}
+
+            #menu {
+                position: absolute;
+                width: 400px;
+                height: 325px;
+
+                top: 20%; left: 40%;
+                margin: -125px 0 0 -100px;
+
+                text-align: center;
+
+                border: 3px solid #fff;
+                border-radius: 15px;
+
+                background-color: #E36B23;
+                box-shadow: 2px 10px 5px #888;
+            }
+
+            #menu p {font-weight: bold; color: #fff;}
+            #menu p a {color: #fff;}
+
+            #menu button {
+                width: 80px;
+                height: 25px;
+
+                background-color: #C44032;
+
+                border: 3px solid #fff;
+                border-radius: 5px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+            }
+
+			#points {
+                position: absolute;
+                width: 100px;
+                height:20px;
+
+                padding: 12px;
+
+                top: 4px;
+                right: 8px;
+
+                border: 1px solid #000;
+                border-radius: 1px;
+
+                background-color: #EA2917;
+                box-shadow: 1px 1px 1px #000;
+
+                font-size: 28px;
+                font-weight: bold;
+                color: #000;
+
+                text-align: right;
+
+                display: none;
+            }
+			<!-- BKL  -->
+			canvas {
+			  position: absolute;
+			  top: 0;
+			}
+
+			#buttons {
+			  position: fixed;
+			  top: 0;
+			  right: 0;
+			  z-index: 1;
+			  background: black;
+			}
+			
